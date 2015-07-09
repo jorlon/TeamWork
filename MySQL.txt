@@ -1,0 +1,7 @@
+I logged into mysql by setting up root and pasword.
+I then created an a1 user and a password
+Granted all privileges on the winestore database after creating it.
+then wget -O winestore.data from the url
+and loaded it into the database.
+
+I setup phpmyadmin as a back up to terminal.

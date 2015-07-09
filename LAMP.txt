@@ -1,0 +1,9 @@
+I checked for any updates
+Then installed tasksel,
+selected LAMP server from the options
+
+I then went through the enable  mod rewrite on apache2
+Prepared the document root - webroot.
+I then created a phpinfo.php file to check if it was all good.
+the restarted.
+Went to 52.64.79.168 to check it was all running.
