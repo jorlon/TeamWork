@@ -1,4 +1,8 @@
-v id = "content">
+<?php require_once("includes/dbconnection.php");?>
+<?php include("includes/layout/header.php");?>
+<?php include("includes/function.php");?>
+
+<div id = "content">
  
  <div id="contact_form">
 <form name="form1" id="ff" method="get" action="answer.php" onSubmit ="return checkForm(this);">
