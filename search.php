@@ -1,12 +1,4 @@
-<?php require_once("includes/dbconnection.php");?>
-<?php include("includes/layout/header.php");?>
-<?php include("includes/function.php");?>
-
-
-
-
- 
- <div id = "content">
+v id = "content">
  
  <div id="contact_form">
 <form name="form1" id="ff" method="get" action="answer.php" onSubmit ="return checkForm(this);">
@@ -122,8 +114,8 @@ echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' select
 <hr>
 
 <br />
-<label><span>Select minimum number of wines in stock per wine:</span>
-<select value="" name ="variety" >
+<label><span>Select minimum number of wines ordered per wine:</span>
+<select value="" name ="stock" >
 <?php
 
 $results = winestoreprice("on_hand", "inventory");
@@ -140,17 +132,17 @@ echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' select
 <br />
 <hr>
 <br />
-<label><span>Select minimum number of wines ordered per wine:</span>
-<select value="" name ="ordered" >
+<label><span>Select minimum number of wines in stock:</span>
+<select value="" name ="on_hand" >
 <?php
 
-$results = winestoreprice("qty", "items");
+$results = winestoreprice("on_hand", "inventory");
 //$results = listVariety($region);
 echo "<option selected>Choose</option>";
 while($row = getRow($results)) {
-$ordered = $row[0];
+$on_hand = $row[0];
 
-echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' selected = ordered';
+echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' selected = on_hand';
 } ?>
 </select>
 </label>
@@ -162,16 +154,16 @@ echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' select
 <hr>
 <br/>
 <label><span>Select price of wine:</span>
-<select value="" name ="ordered" >
+<select value="" name ="cost" >
 <?php
 
-$results = winestoreprice("price", "items", "ASC");
+$results = winestoreprice("cost", "inventory", "ASC");
 //$results = listVariety($region);
 echo "<option selected>Choose</option>";
 while($row = getRow($results)) {
-$price = $row[0];
+$cost = $row[0];
 
-echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' selected = price';
+echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' selected = cost';
 } ?>
 </select>
 </label>
@@ -179,35 +171,27 @@ echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' select
 <br />
 <hr>
 <br />
-<label><span>Select minimum price to find wine:</span>
-<select value="" name ="ordered" >
-<?php
 
-$results = winestoreprice("price", "items","ASC");
-//$results = listVariety($region);
-echo "<option selected>Choose</option>";
-while($row = getRow($results)) {
-$minprice = $row[0];
-
-echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' selected = minprice';
-} ?>
-</select>
+<h3>Search by wine name</h3>
+<label> <span>Minimum wine price:</span> <input type="text"
+   placeholder="Enter a wine name to search" name="mincost" id="mincost" type>
 </label>
+
 <br />
 <br />
 <hr>
 <br />
 <label><span>Select max price range of wine:</span>
-<select value="" name ="ordered" >
+<select value="" name ="maxcost" >
 <?php
 
-$results = winestoreprice("price", "items", "DESC");
+$results = winestoreprice("cost", "inventory", "DESC");
 //$results = listVariety($region);
 echo "<option selected>Choose</option>";
 while($row = getRow($results)) {
-$maxprice = $row[0];
+$maxcost = $row[0];
 
-echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' selected = maxprice';
+echo " htmlspecialchars(<option>{$row[0]}\n" . "<br /></option>)"; echo ' selected = maxcost';
 } ?>
 </select>
 </label>
