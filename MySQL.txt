@@ -5,3 +5,4 @@ then wget -O winestore.data from the url
 and loaded it into the database.
 
 I setup phpmyadmin as a back up to terminal.
+Check winestore database to confirm it was transfered into my database.

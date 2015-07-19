@@ -1,1 +1,39 @@
+The design of the website will be as follows
+
+WINESTORE
+		IMG	
+			->images.png etc.
+		INCLUDES
+			LAYOUT
+				->footer.php
+				->header.php
+				->navigation.php
+			->config.php
+			->dbconnection.php
+			->function.php
+			->sessions.php
+		JS
+			->jsMin.js
+			->modenizer.js
+		STYLE
+			->stylesheet.css
+		->index.php
+		->answer.php
+		->search.php
+
+Where names in capitals representing folders and files indicated by -> and have extentions.
+
+I have set up the struture this way as to seperate like groups of files. The server by default will target index.php
+there for its at the front of the hierarche then all folders and files are accessable from inside the files.
+
+The design of the application is from any user on the internet wanting to query for wines.
+The theme is influenced from red wine and complimenting colours were chosen to give a averall feeling
+of athentically searching a winestore.
+
+The design is user freindly with multiple links to search page with easy to understand navigation.
+
+All images taken from dollarphotclub.com
+
+
+
 

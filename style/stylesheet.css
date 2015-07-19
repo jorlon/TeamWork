@@ -104,18 +104,45 @@ body {
 
 header{
 	 position:relative;
-	 top:-19px;
+	 top:-23px;
 	 background:#800020;
 	 height:80px;
 	
+}
+#logo {
+	position:relative;
+	z-index:1;
+	top:-235%;
+	left:5%;
+	max-width:100% !important;
+    height:auto;
+    display:block;
+    width:150px;
+    hight:150px;
+   /* box-shadow: 5px 5px 2px #000;*/
+   /*box-shadow: 10px 10px 5px #000, -10px -10px 5px #800020, 0px 0px 5px 5px #fff;*/
+-moz-box-shadow: -5px -5px 5px #000;
+-webkit-box-shadow: -5px -5px 5px #00;
+box-shadow: -5px -5px 5px #550e0c;
+  
+}
+p {
+	color:black;
+}
+a{
+	color:#fddc00;
+	font-size:20px;
+	text-decoration:none;
 }
 .nav{
 	position:relative;
 	top:-60px;
     list-style:none;
     margin:0;
-    padding:0;
+    padding:10px;
+    padding-bottom:20px;
     text-align:center;
+    z-index:2;
 }
 .nav li{
     display:inline;
@@ -124,7 +151,7 @@ header{
 	text-decoration:none;
     display:inline-block;
     font-size:18px;
-    padding:15px;
+    padding:5px;
     color:#fff;
 }
 #main{
@@ -138,7 +165,7 @@ header{
 	color:#800020;
 }
 #image {
-	top:-20px;
+	top:-22px;
     width:100%;
     height:600px;
     position:relative;
@@ -226,7 +253,13 @@ footer{
 	background-color:black;
 	color:#fff;
 }
-
+h1 {
+	
+	color:maroon;
+}
+H3 {
+	color:#ccac00;
+}
 /*===========CONTACT FORM  taken from the tutorial by Georgi Dyulgerov from website http://ftutorials.com/jquery-form-validation===========*/
 	#contact_form {
 		text-shadow: 0 1px 0 #FFF;
@@ -239,7 +272,7 @@ footer{
 	#ff label {
 		cursor: pointer;
 		margin: 4px 0;
-		color: #ed7700;
+		color: maroon;
 		display: block;
 		font-weight: 800;
 	}
@@ -281,7 +314,7 @@ footer{
 		-webkit-box-shadow: inset 0px 1px 0px 0px #fce2c1;
 		box-shadow: inset 0px 1px 0px 0px #fce2c1;
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffc477
-			), color-stop(1, #fb9e25) );
+			), color-stop(1, #ccac00) );
 		background: -moz-linear-gradient(center top, #ffc477 5%, #fb9e25 100%);
 		background-color: #ffc477;
 		-webkit-border-radius: 16px;
@@ -299,7 +332,7 @@ footer{
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fb9e25
 			), color-stop(1, #ffc477) );
 		background: -moz-linear-gradient(center top, #fb9e25 5%, #ffc477 100%);
-		background-color: #fb9e25;
+		background-color: #ccac00;
 	}
 
 
