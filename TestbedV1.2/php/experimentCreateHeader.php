@@ -22,7 +22,7 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.1.0/fabric.all.min.js" ></script>
 	
 	<script src="js/bootstrap.min.js"></script>
-
+	<script src="js/imageLoading.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 
 	
