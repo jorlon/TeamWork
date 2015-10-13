@@ -12,9 +12,5 @@ $fileName= $_GET['fileName'];
 loadSliderFromJsonFileName($fileName);
      
 
-     
-
-
-
 require_once("php/footer.php"); ?>
 

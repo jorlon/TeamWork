@@ -1,6 +1,8 @@
 <footer>
 
 </footer>
-<!--<script src="slide.js"></script>-->
+<script>
+$('.carousel').carousel();
+</script>
 </body>
 </html>

@@ -21,11 +21,11 @@ $pagesArray = json_decode($pagesJson, true);
 
 
 if (array_key_exists('slideInterval',$pagesArray)){
-echo "<div class='container'><div id='myCarousel' class='carousel slide' data-ride='carousel' data-interval='".$pagesArray['slideInterval']."' data-pause='false'><div class='carousel-inner' role='listbox'>";
+echo "<div class='container'><div id='myCarousel' class= 'carousel-fade' data-ride='carousel' data-interval='".$pagesArray['slideInterval']."' data-pause='true'><div class='carousel-inner' role='listbox'>";
 }
 else{
 echo "<div class='container'>
-<div id='myCarousel' class='carousel slide' data-ride='carousel' data-interval='2000' data-pause='false'>
+<div id='myCarousel' class=' carousel-fade' data-ride='carousel' data-interval='2000' data-pause='true'>
 <div class='carousel-inner' role='listbox'>";
 }
 foreach ($pagesArray as $pageNum=>$jsonString){
@@ -86,4 +86,5 @@ pageNum = (editCanvasNum/2);
 </script>";
 }
 ?>
+
 

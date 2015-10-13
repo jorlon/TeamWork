@@ -1,3 +1,4 @@
+
 <?php
 
 function displaySlide($slideNum) {
@@ -31,19 +32,22 @@ $(document).ready(function(){
 <?php
 
 function displaySlide2($slideNum, $jsonString) {
+
 //$myfile = file_get_contents("page1.json");
 if ($slideNum == '1')
 { echo "<div class='item active'>";}
 else{
+   
         echo "<div class='item'>";}
      
 
 //  echo "<div class='slide'> ";
-      echo "<canvas id='can".$slideNum."' width='1100' height='600' ></canvas>";
+       echo "<div id ='game'>"; 
+      echo "<canvas id='can".$slideNum."' class ='can'  width='1400' height='900' ></canvas>";
 
 
     echo "</div>";
-
+echo "</div>";
 
  ?>
 
@@ -56,5 +60,9 @@ $(document).ready(function(){
 });
 
 </script>
+	
+
+
+
 <?php } ?>
 
