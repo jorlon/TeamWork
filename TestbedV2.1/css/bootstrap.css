@@ -6334,36 +6334,49 @@ button.close {
    width:100%;
 }
 #game{
-   position:relative;
+   //position:relative;
    max-width:100%;
-   //background-color:red;
+   max-height:100%;
    
 }
+@media (max-width: 2240px) {
+.can  {
+   // adjusts the size keeping scale for slideshow images!!!!
+   position:relative;
+   height:auto;
+   width:auto;
+}
+canvas#can2.can.lower-canvas{
+ width:100%;
+ height:100%;
+}
+}
+@media (max-width: 1440px) {
 .can  {
    position:relative;
-   max-width:100%;
-   //background-color:blue;
-   
-  
-
-  
+   max-width:1440px;
+   height:auto;
+   width:auto;
 }
-
-@media (max-width: 768px) {
+}
+@media (max-width: 868px) {
 .can  {
    position:relative;
-   max-width:100%;
-   background-color:blue;
-  
+   max-width:868px;
+   max-height:600px;
+   height:auto;
+   width:auto;
 }
-#game{
+}
+@media (max-width: 468px) {
+.can  {
    position:relative;
-   max-width:100%;
-   background-color:red;
-   
+   max-width:500px;
+   max-height:300px;
+   height:auto;
+   width:auto;
+
 }
-.can2 .can .lower-canvas .item {
-   width:100%;
 }
 .clearfix:before,
 .clearfix:after,
@@ -6658,5 +6671,5 @@ button.close {
     display: none !important;
   }
 }
-}
+
 /*# sourceMappingURL=bootstrap.css.map */
