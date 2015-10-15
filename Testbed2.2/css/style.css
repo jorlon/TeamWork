@@ -1,0 +1,132 @@
+/* Sidebar */
+/* REFERENCE THENEWBOSTON BOOTSTRAP TUTORIALS - https://www.youtube.com/playlist?list=PL6gx4Cwl9DGBPw1sFodruZUPheWVKchlM */
+#sidebar-wrapper
+{
+    z-index: 1;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2C3E50;
+    margin-top: -20px;
+
+
+}
+
+/* Main content */
+#page-content-wrapper
+{
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+
+}
+
+/* Change the width of the sidebar to display it */
+#wrapper.menuDisplayed #sidebar-wrapper
+{
+    width: 160px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper
+{
+    padding-left: 160px;
+}
+
+/* Sidebar styling */
+.sidebar-nav
+{
+    padding: 0;
+    list-style: none;
+
+}
+.sidebar-nav li
+{
+    //text-indent: 20px;
+    //line-height: 40px;
+
+}
+.sidebar-nav li a
+{
+    padding:20px 5px;
+
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+    text-align: center;
+}
+.sidebar-nav li a:hover
+{
+    background: #757575;
+}
+.sidebar-nav li .form-group{
+    text-indent: 0px;
+    width:100px;
+}
+
+.container canvas{
+    border-style: solid;
+    border-width: medium;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:1100px;
+    height:600px;
+
+}
+.btn-group{
+    width:80%;
+    margin:5px;
+}
+
+.nav-tabs li a{
+    background-color:#5CB85C;
+    color:white;
+}
+.sidebar-nav li a .sideIcon{
+    margin:3px; 
+    clear: both;
+    text-align: center;
+    font-size:20px;
+}
+
+
+.panel-heading{
+    font-weight:bold;
+}
+.panel{
+    width:100%;
+  //  width: 275px;
+}
+.btn-success{
+
+}
+.header {
+    text-align:center;
+    padding:5px;
+}
+#viewExpSection {
+
+
+
+}
+.panel
+{
+    float:left; 
+  //  width: 210px;
+ //   height: 150px;  
+    text-align: center;
+    margin-right: 15px;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 2px #8f8f8f; 
+    -moz-box-shadow: 0px 0px 2px #8f8f8f; 
+    box-shadow: 0px 0px 2px #8f8f8f;
+}
+.panel:hover
+{
+    -webkit-box-shadow: 0px 0px 10px #8f8f8f; 
+    -moz-box-shadow: 0px 0px 10px #8f8f8f; 
+    box-shadow: 0px 0px 10px #8f8f8f;
+}
