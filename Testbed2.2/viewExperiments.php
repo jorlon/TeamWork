@@ -1,8 +1,10 @@
+<?php require_once("php/sessions.php"); ?>
 <?php
 include("php/viewExperimentHeader.php");
 ?>
-
-
+<?php require("php/function.php"); ?>
+<?php confirm_logged_in(); ?>
+<?php  echo "Welcome ".$_SESSION['username'];?>
 <div class="container">
     <div class="header">
         <h2>Your Experiments</h2>

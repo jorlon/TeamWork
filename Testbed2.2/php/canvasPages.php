@@ -59,7 +59,7 @@ function addNewEditSlide($pageNum,$canvasJsonString){
 }
 canvas".$pageNum.".onmouseover = function () {
         console.log('hovered');
-        canvas".$pageNume.".calcOffset();
+        canvas".$pageNum.".calcOffset();
 
     };
                 </script>";
